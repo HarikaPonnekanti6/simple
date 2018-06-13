@@ -96,7 +96,7 @@
                     </goals>
                     <configuration>
                         <fromDir>${basedir}/target/simplewebapp/</fromDir>
-                       <includes>*</includes>
+                       <includes>*/**</includes>
                         <url>${azureFtpUrl}</url>
                         <toDir>webapps/ROOT</toDir>
                         <serverId>azure-hello-world</serverId>
