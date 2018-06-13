@@ -92,10 +92,11 @@
                     <id>upload-webapp</id>
                     <phase>install</phase>
                   <goals>
-                        <goal>upload-single</goal>
+                        <goal>upload</goal>
                     </goals>
                     <configuration>
-                        <fromFile>${basedir}/target/simplewebapp/</fromFile>
+                        <fromDir>${basedir}/target/simplewebapp/</fromDir>
+                       <includes>*</includes>
                         <url>${azureFtpUrl}</url>
                         <toDir>webapps/</toDir>
                         <serverId>azure-hello-world</serverId>
