@@ -95,7 +95,7 @@
                         <goal>upload</goal>
                     </goals>
                     <configuration>
-                        <fromDir>${basedir}/target/simplewebapp/</fromDir>
+                        <fromDir>${basedir}/target/simplewebapp-0.0.1-SNAPSHOT</fromDir>
                        <includes>*/**</includes>
                         <url>${azureFtpUrl}</url>
                         <toDir>webapps/ROOT</toDir>
