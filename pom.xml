@@ -92,7 +92,7 @@
                     <id>upload-webapp</id>
                     <phase>install</phase>
                     <configuration>
-                        <fromFile>${basedir}/target/simplewebapp/</fromFile>
+                        <fromDir>${basedir}/target/simplewebapp/</fromDir>
                         <url>${azureFtpUrl}</url>
                         <toDir>webapps/</toDir>
                         <serverId>azure-hello-world</serverId>
