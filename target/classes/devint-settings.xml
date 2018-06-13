@@ -11,7 +11,7 @@
 <servers>
     <server>
         <id>azure-hello-world</id>
-        <username>sampleWebappres__test\csci5308g22</username>
+        <username>sampleWebappres\csci5308g22</username>
         <password>Group_22</password>
     </server>
 </servers>
