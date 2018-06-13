@@ -83,6 +83,26 @@
                 </execution>
             </executions>
         </plugin>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>wagon-maven-plugin</artifactId>
+            <version>1.0</version>
+            <executions>
+                <execution>
+                    <id>upload-webapp</id>
+                    <phase>install</phase>
+                    <goals>
+                        <goal>upload-single</goal>
+                    </goals>
+                    <configuration>
+                        <fromFile>${basedir}/webapp/</fromFile>
+                        <url>${azureFtpUrl}</url>
+                        <toFile>webapps/ROOT</toFile>
+                        <serverId>azure-hello-world</serverId>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
     </plugins>
 <!--     <finalName>simplewebapp</finalName> -->
   </build>
