@@ -95,7 +95,7 @@
                         <goal>upload-single</goal>
                     </goals>
                     <configuration>
-                        <fromDir>${basedir}/target/simplewebapp/</fromDir>
+                        <fromFile>${basedir}/target/simplewebapp/</fromFile>
                         <url>${azureFtpUrl}</url>
                         <toDir>webapps/</toDir>
                         <serverId>azure-hello-world</serverId>
