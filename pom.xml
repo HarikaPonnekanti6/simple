@@ -91,6 +91,9 @@
                 <execution>
                     <id>upload-webapp</id>
                     <phase>install</phase>
+                  <goals>
+                        <goal>upload-single</goal>
+                    </goals>
                     <configuration>
                         <fromDir>${basedir}/target/simplewebapp/</fromDir>
                         <url>${azureFtpUrl}</url>
